@@ -17,7 +17,9 @@ jobs:
 
     steps:
       - name: Checkout project
-        uses: actions/checkout@v2
+          uses: RobertWieczoreck/checkout@21bbf8c0e4ac6f18360981a5a025a60a36f753ef
+          with:
+            fetch-tags: true
 
       - name: Set env variables
         run: |
